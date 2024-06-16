@@ -1,0 +1,91 @@
+.sua-classe-aqui {
+    opacity: 0; /* Iniciar com opacidade 0 */
+    transition: opacity 1s, transform 2s; /* Garantir transição suave */
+  }
+  
+  .fade-down {
+    animation: fade-down 1.0s forwards;
+  }
+  
+  .bounce-left {
+    animation: bounce-left 1.0s forwards;
+  }
+  
+  .bounce-right {
+    animation: bounce-right 1.0s forwards;
+  }
+  
+  .fade {
+    opacity: 1; /* Final da animação com opacidade 1 */
+  }
+  
+  .grow {
+    animation: grow 1.0s forwards;
+  }
+
+  .fade-up {
+    animation: fade-up 1.0s forwards;
+  }
+  
+  @keyframes fade-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes bounce-right {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes grow {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
